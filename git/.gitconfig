@@ -1,0 +1,16 @@
+[user]
+	name = Jack Cassidy
+	email = jackc@qualtrics.com
+[core]
+	editor = code --wait
+	excludesfile = /Users/$USER/.gitignore
+[merge]
+	tool = vscode
+[mergetool "vscode"]
+	cmd = code --wait $MERGED
+[diff]
+	tool = vscode
+[difftool]
+	cmd = code --wait --diff $LOCAL $REMOTE
+[commit]
+	template = /Users/jack/.stCommitMsg
