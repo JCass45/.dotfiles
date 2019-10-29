@@ -1,4 +1,4 @@
 # #!/bin/sh
 
-antibody bundle <"$DOTFILES/antibody/plugins.txt" >~/.zsh_plugins.sh
+antibody bundle <"$HOME/dotfiles/antibody/plugins.txt" >~/.zsh_plugins.sh
 antibody update

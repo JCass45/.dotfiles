@@ -1,1 +1,4 @@
-robbyrussell/pyenv
+robbyrussell/oh-my-zsh path:plugins/pyenv
+
+# these should be at last!
+sindresorhus/pure
