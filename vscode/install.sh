@@ -8,11 +8,11 @@ if command -v code >/dev/null; then
 	fi
 	mkdir -p "$VSCODE_HOME/User"
 
-	ln -sf "$DOTFILES/vscode/settings.json" "$VSCODE_HOME/User/settings.json"
-	ln -sf "$DOTFILES/vscode/keybindings.json" "$VSCODE_HOME/User/keybindings.json"
-	ln -sf "$DOTFILES/vscode/snippets" "$VSCODE_HOME/User/snippets"
+	ln -sf "$HOME/dotfiles/vscode/settings.json" "$VSCODE_HOME/User/settings.json"
+	ln -sf "$HOME/dotfiles/vscode/keybindings.json" "$VSCODE_HOME/User/keybindings.json"
+	ln -sf "$HOME/dotfiles/vscode/snippets" "$VSCODE_HOME/User/snippets"
 
 	while read -r extension; do
 		code --install-extension "$extension" || true
-	done <"$DOTFILES/vscode/extensions.txt"
+	done <"$HOME/dotfiles/vscode/extensions.txt"
 fi
