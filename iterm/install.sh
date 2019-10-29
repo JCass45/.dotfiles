@@ -1,4 +1,4 @@
-#!/bin/sh\
+#!/bin/sh
 
 [ "$(uname -s)" != "Darwin" ] && exit 0
 sed "s;/Users/carlos;$HOME;g" \
