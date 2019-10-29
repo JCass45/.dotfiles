@@ -1,0 +1,6 @@
+pylint
+black
+bpython
+pytest
+pytest-cov
+rope
