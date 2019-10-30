@@ -1,5 +1,0 @@
-robbyrussell/oh-my-zsh path:plugins/pyenv
-robbyrussell/oh-my-zsh path:plugins/docker
-zsh-users/zsh-syntax-highlighting
-
-denysdovhan/spaceship-prompt
