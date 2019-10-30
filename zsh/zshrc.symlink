@@ -13,6 +13,8 @@ export VEDITOR='code'
 bindkey -e
 # fix for cmd+delete, to delete only from the left of the cursor instead of entire line
 bindkey "^U" backward-kill-line
+# add cmd+shift+z redo to keybindings
+bindkey "^X^_" redo
 
 # all of our zsh files
 typeset -U config_files
