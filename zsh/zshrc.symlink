@@ -9,6 +9,11 @@ export DOTFILES="$HOME/dotfiles"
 export EDITOR='vim'
 export VEDITOR='code'
 
+# use emacs keybindings - compatible with my iterm settings
+bindkey -e
+# fix for cmd+delete, to delete only from the left of the cursor instead of entire line
+bindkey "^U" backward-kill-line
+
 # all of our zsh files
 typeset -U config_files
 config_files=($DOTFILES/**/*.zsh)
