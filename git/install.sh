@@ -1,7 +1,7 @@
 #! /bin/sh
 
 # better diffs
-if ! command -v diff-so-fancy >/dev/null 2>&1; then
+if ! command -v diff-so-fancy > /dev/null 2>&1; then
     echo "Run: 'brew install diff-so-fancy' for fancy diffs"
 else
     git config --global core.pager "diff-so-fancy | less --tabs=4 -RFX"

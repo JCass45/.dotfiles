@@ -1,14 +1,10 @@
+#!/bin/sh
 
 # Set lang for UTF-8 compatible prompt fix
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 
 ZSH_THEME="agnoster"
-plugins=(
-	docker
-	pyenv
-	osx
-)
 
 # History stuff
 HISTFILE=~/.zsh_history
@@ -22,6 +18,7 @@ setopt HIST_VERIFY
 setopt HIST_EXPIRE_DUPS_FIRST
 
 ENABLE_CORRECTION="true"
+CASE_SENSITIVE="false"
 
 # use emacs keybindings - compatible with my iterm settings
 bindkey -e
@@ -29,10 +26,3 @@ bindkey -e
 bindkey "^U" backward-kill-line
 # add cmd+shift+z redo to keybindings
 bindkey "^X^_" redo
-
-# search history with fzf if installed, default otherwise
-if test -d /usr/local/opt/fzf/shell; then
-	. /usr/local/opt/fzf/shell/key-bindings.zsh
-else
-	bindkey '^R' history-incremental-search-backward
-fi

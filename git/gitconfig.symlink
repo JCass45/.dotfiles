@@ -3,7 +3,9 @@
 	email = jackc@qualtrics.com
 [core]
 	editor = code --wait
-	excludesfile = /Users/$USER/.gitignore
+	excludesfile = /Users/i512377/.gitignore_global
+	pager = diff-so-fancy | less --tabs=4 -RFX
+	ignorecase = false
 [merge]
 	tool = vscode
 [mergetool "vscode"]
@@ -12,5 +14,23 @@
 	tool = vscode
 [difftool]
 	cmd = code --wait --diff $LOCAL $REMOTE
-[commit]
-	template = /Users/jack/.stCommitMsg
+[color]
+	ui = true
+[color "diff-highlight"]
+	oldNormal = red bold
+	oldHighlight = red bold 52
+	newNormal = green bold
+	newHighlight = green bold 22
+[color "diff"]
+	meta = 11
+	frag = magenta bold
+	commit = yellow bold
+	old = red bold
+	new = green bold
+	whitespace = red reverse
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true

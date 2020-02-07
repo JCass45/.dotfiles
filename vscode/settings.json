@@ -1,9 +1,7 @@
 {
-  // EDITOR
-  "editor.minimap.enabled": false,
   "editor.selectionHighlight": false,
-  "editor.fontFamily": "Hack Nerd Font, Menlo, Monaco, 'Courier New', monospace",
-  "editor.fontSize": 14,
+  "editor.fontFamily": "FiraCode Nerd Font, Hack Nerd Font, Menlo, Monaco, 'Courier New', monospace",
+  "editor.fontSize": 15,
   "editor.fontLigatures": true,
   "editor.formatOnPaste": true,
   "editor.formatOnType": true,
@@ -51,14 +49,17 @@
   // INTEGRATED TERMINAL
   "terminal.external.osxExec": "iTerm.app",
   "terminal.integrated.fontSize": 14,
-  "terminal.integrated.fontFamily": "Hack Nerd Font",
+  "terminal.integrated.fontFamily": "FiraCode Nerd Font",
   // JSON
   "files.associations": {
     "*.json": "jsonc"
   },
   // PYTHON
   "[python]": {
-    "editor.formatOnPaste": false
+    "editor.formatOnPaste": false,
+    "editor.rulers": [
+      88
+    ]
   },
   "python.autoComplete.addBrackets": true,
   "python.venvPath": "~/.pyenv",
@@ -66,7 +67,6 @@
     "--max-line-length=88",
     "--disable=C0301"
   ],
-  "python.linting.banditEnabled": true,
   "python.linting.banditArgs": [
     "-r",
     "-ll"
@@ -81,11 +81,19 @@
   // Sync settings to this gist
   "sync.autoUpload": false,
   "javascript.updateImportsOnFileMove.enabled": "always",
-  "remote.SSH.configFile": "/Users/jack/.ssh/personal-config",
+  "remote.SSH.configFile": "~/Personal/.ssh/config",
   "editor.renderWhitespace": "selection",
   "python.testing.pytestEnabled": true,
   "eslint.autoFixOnSave": true,
   "[yaml]": {},
   "yaml.format.enable": false,
-  "python.pythonPath": "/Users/jack/.pyenv/versions/3.7.0/bin/python",
+  "python.pythonPath": "/Users/i512377/.pyenv/versions/john-fyp/bin/python",
+  "window.zoomLevel": 0,
+  "debug.console.fontFamily": "FiraCode Nerd Font, Hack Nerd Font, Menlo, Monaco, 'Courier New', monospace",
+  "python.formatting.provider": "black",
+  "yaml.format.singleQuote": true,
+  "problems.showCurrentInStatus": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
 }

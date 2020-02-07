@@ -10,3 +10,5 @@ else
     alias lsa="ls -a"
     alias lsla="ls -la"
 fi
+
+alias reload="exec $SHELL"
