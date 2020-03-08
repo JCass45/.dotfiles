@@ -30,7 +30,7 @@ done
 plugins=(
 	docker
 	fzf
-	pyenv
+	fzf-tab
 	osx
 	zsh-syntax-highlighting
 	zsh-completions
