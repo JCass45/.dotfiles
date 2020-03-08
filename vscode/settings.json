@@ -1,17 +1,21 @@
 {
   "editor.selectionHighlight": false,
   "editor.fontFamily": "FiraCode Nerd Font, Hack Nerd Font, Menlo, Monaco, 'Courier New', monospace",
+  "debug.console.fontFamily": "FiraCode Nerd Font, Hack Nerd Font, Menlo, Monaco, 'Courier New', monospace",
   "editor.fontSize": 15,
   "editor.fontLigatures": true,
   "editor.formatOnPaste": true,
   "editor.formatOnType": true,
   "editor.formatOnSave": true,
-  "editor.formatOnSaveTimeout": 3000, // FOR RUBOCOP
-  "explorer.confirmDragAndDrop": false,
-  "editor.suggest.localityBonus": true,
-  "editor.tabCompletion": "on",
+  "editor.renderWhitespace": "selection",
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
   "editor.wordWrap": "off",
+  "editor.tabCompletion": "on",
   "editor.cursorBlinking": "smooth",
+  "editor.suggest.localityBonus": true,
+  "explorer.confirmDragAndDrop": false,
   "workbench.startupEditor": "newUntitledFile",
   "workbench.editor.enablePreview": false,
   "workbench.sideBar.location": "right",
@@ -19,13 +23,14 @@
   "workbench.colorTheme": "City Lights",
   "workbench.iconTheme": "material-icon-theme",
   "material-icon-theme.files.associations": {
-    ".nycrc.yaml": "istanbul",
+    ".nycrc.yaml": "istanbul"
   },
   "material-icon-theme.folders.associations": {
     "unit": "test",
     "integration": "test"
   },
   "breadcrumbs.enabled": true,
+  "problems.showCurrentInStatus": true,
   "files.trimTrailingWhitespace": true,
   "files.exclude": {
     "**/.git": true,
@@ -56,7 +61,7 @@
   },
   // PYTHON
   "[python]": {
-    "editor.formatOnPaste": false,
+    "editor.formatOnPaste": true,
     "editor.rulers": [
       88
     ]
@@ -71,29 +76,14 @@
     "-r",
     "-ll"
   ],
-  // "python.formatting.provider": "black",
+  "python.testing.pytestEnabled": true,
+  "python.formatting.provider": "black",
   // Javascript
+  "javascript.updateImportsOnFileMove.enabled": "always",
   "javascript.format.enable": false, // Let eslint handle everything!
   "javascript.validate.enable": false,
   "eslint.alwaysShowStatus": true,
-  // AWS
-  "terraform.codelens.enabled": false,
-  // Sync settings to this gist
-  "sync.autoUpload": false,
-  "javascript.updateImportsOnFileMove.enabled": "always",
-  "remote.SSH.configFile": "~/Personal/.ssh/config",
-  "editor.renderWhitespace": "selection",
-  "python.testing.pytestEnabled": true,
-  "eslint.autoFixOnSave": true,
-  "[yaml]": {},
-  "yaml.format.enable": false,
-  "python.pythonPath": "/Users/i512377/.pyenv/versions/john-fyp/bin/python",
-  "window.zoomLevel": 0,
-  "debug.console.fontFamily": "FiraCode Nerd Font, Hack Nerd Font, Menlo, Monaco, 'Courier New', monospace",
-  "python.formatting.provider": "black",
-  "yaml.format.singleQuote": true,
-  "problems.showCurrentInStatus": true,
-  "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": true
-  },
+  // Others
+  "remote.SSH.configFile": "~/.ssh/personal.config",
+  "bashIde.highlightParsingErrors": false
 }
