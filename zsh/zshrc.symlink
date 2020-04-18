@@ -17,6 +17,7 @@ CONFIGS=($(find $DOTFILES -name 'config.sh'))
 COMPLETIONS=($(find $DOTFILES -name 'completions.sh'))
 ALIASES=($(find $DOTFILES -name 'aliases.sh'))
 PATHS=($(find $DOTFILES -name 'path.sh'))
+FUNCTIONS=($(find $DOTFILES -name '*.function'))
 
 
 # load the path files
@@ -57,6 +58,12 @@ done
 
 for file in $ALIASES; do
   	source "$file"
+done
+
+for file in $FUNCTIONS; do
+	function_name=$(basename $file .function)
+	ln -sf $file $HOME/.oh-my-zsh/functions/$function_name
+	autoload -Uz $function_name
 done
 
 # zprof
