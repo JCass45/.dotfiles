@@ -2,11 +2,19 @@
 [
     {
         "key": "cmd+shift+]",
-        "command": "workbench.action.navigateRight"
+        "command": "workbench.action.nextEditorInGroup"
     },
     {
         "key": "cmd+shift+[",
-        "command": "workbench.action.navigateLeft"
+        "command": "workbench.action.previousEditorInGroup"
+    },
+    {
+        "key": "cmd+alt+]",
+        "command": "workbench.action.focusNextGroup"
+    },
+    {
+        "key": "cmd+alt+[",
+        "command": "workbench.action.focusPreviousGroup"
     },
     {
         "key": "cmd+[",

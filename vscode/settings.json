@@ -33,23 +33,22 @@
   "problems.showCurrentInStatus": true,
   "files.trimTrailingWhitespace": true,
   "files.exclude": {
-    "**/.git": true,
-    "**/.svn": true,
-    "**/.hg": true,
-    "**/CVS": true,
-    "**/.DS_Store": true,
     "**/__pycache__": true,
-    "**/*.pyc": true,
-    "**/.vscode": true,
-    "**/venv": true,
-    "**/.mypy_cache": true,
-    "**/*.egg-info": true,
-    "**/.pytest_cache": true,
     "**/.coverage*": true,
+    "**/.DS_Store": true,
+    "**/.git": true,
+    "**/.hg": true,
+    "**/.mypy_cache": true,
+    "**/.pytest_cache": true,
+    "**/.svn": true,
+    "**/.vscode": true,
+    "**/*.egg-info": true,
+    "**/*.pyc": true,
+    "**/*.scannerwork": true,
     "**/cov.xml": true,
+    "**/CVS": true,
     "**/junit.xml": true,
-    "**/*.lock": true,
-    "**/*.scannerwork": true
+    "**/venv": true
   },
   // INTEGRATED TERMINAL
   "terminal.external.osxExec": "iTerm.app",
@@ -57,7 +56,8 @@
   "terminal.integrated.fontFamily": "FiraCode Nerd Font",
   // JSON
   "files.associations": {
-    "*.json": "jsonc"
+    "*.json": "jsonc",
+    "Vagrantfile": "ruby"
   },
   // PYTHON
   "[python]": {
@@ -77,7 +77,6 @@
     "-ll"
   ],
   "python.testing.pytestEnabled": true,
-  "python.formatting.provider": "black",
   // Javascript
   "javascript.updateImportsOnFileMove.enabled": "always",
   "javascript.format.enable": false, // Let eslint handle everything!

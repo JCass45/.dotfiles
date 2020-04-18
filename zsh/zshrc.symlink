@@ -13,25 +13,29 @@ export EDITOR='vim'
 export VEDITOR='code'
 
 
-# all of our zsh files
-typeset -U config_files
-config_files=($DOTFILES/**/*.zsh)
+CONFIGS=($(find $DOTFILES -name 'config.sh'))
+COMPLETIONS=($(find $DOTFILES -name 'completions.sh'))
+ALIASES=($(find $DOTFILES -name 'aliases.sh'))
+PATHS=($(find $DOTFILES -name 'path.sh'))
+
 
 # load the path files
-for file in ${(M)config_files:#*/path.zsh}; do
-  source "$file"
+for file in $PATHS; do
+  	source "$file"
 done
 
-# load everything but the path and completion files
-for file in ${${config_files:#*/path.zsh}:#*/completion.zsh}; do
-  source "$file"
+# load the path files
+for file in $CONFIGS; do
+  	source "$file"
 done
 
 plugins=(
+	colored-man-pages
 	docker
 	fzf
 	fzf-tab
 	osx
+	pipenv
 	zsh-syntax-highlighting
 	zsh-completions
 	zsh-nvm
@@ -47,10 +51,12 @@ done
 compinit -C
 
 # load every completion after autocomplete loads
-for file in ${(M)config_files:#*/completion.zsh}; do
+for file in $COMPLETIONS; do
   source "$file"
 done
 
-unset config_files
+for file in $ALIASES; do
+  	source "$file"
+done
 
 # zprof
