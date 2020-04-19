@@ -13,5 +13,6 @@ msjsdiag.debugger-for-chrome
 PKief.material-icon-theme
 shyykoserhiy.vscode-spotify
 waderyan.gitblame
+wholroyd.HCL
 yummygum.city-lights-theme
 yzhang.markdown-all-in-one
