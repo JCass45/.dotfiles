@@ -1,0 +1,4 @@
+shipit() {
+    cat $DOTFILES/fun/shipit.txt | pbcopy
+    echo "Ship It!"
+}

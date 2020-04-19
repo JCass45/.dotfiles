@@ -1,1 +1,0 @@
-alias shipit="cat $DOTFILES/fun/shipit.txt | pbcopy"
