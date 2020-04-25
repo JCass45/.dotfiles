@@ -4,8 +4,6 @@
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 
-ZSH_THEME="agnoster"
-
 # History stuff
 HISTFILE=~/.zsh_history
 HISTSIZE=10000

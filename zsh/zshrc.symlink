@@ -12,20 +12,16 @@ export ZSH="$HOME/.oh-my-zsh"
 export EDITOR='vim'
 export VEDITOR='code'
 
-
 CONFIGS=($(find $DOTFILES -name 'config.sh'))
 COMPLETIONS=($(find $DOTFILES -name 'completions.sh'))
 ALIASES=($(find $DOTFILES -name 'aliases.sh'))
 PATHS=($(find $DOTFILES -name 'path.sh'))
 FUNCTIONS=($(find $DOTFILES -name '*.function'))
 
-
-# load the path files
 for file in $PATHS; do
   	source "$file"
 done
 
-# load the path files
 for file in $CONFIGS; do
   	source "$file"
 done
@@ -47,9 +43,9 @@ source $ZSH/oh-my-zsh.sh
 
 autoload -Uz compinit
 for dump in ~/.zcompdump(N.mh+24); do
+	rm $HOME/.zcompdump*
   compinit
 done
-compinit -C
 
 # load every completion after autocomplete loads
 for file in $COMPLETIONS; do

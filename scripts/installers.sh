@@ -1,12 +1,16 @@
 #!/bin/sh
 
 set -e
+INSTALLERS=($(find ${DOTFILES:-$HOME/dotfiles} -name "install.sh"))
+echo $INSTALLERS
+# Start with homebrew installs...
+source "homebrew/install.sh"
 
 # find the installers and run them iteratively
-git ls-tree --name-only -r HEAD | grep install.sh | while read -r installer; do
+for installer in $INSTALLERS; do
 	if [ $installer = "homebrew/install.sh" ]; then
 		continue
 	fi
 	echo "› ${installer}..."
-	sh -c "$installer"
+	source "$installer"
 done
