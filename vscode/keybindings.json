@@ -32,5 +32,9 @@
         "key": "cmd+w",
         "command": "workbench.action.terminal.kill",
         "when": "terminalFocus"
+    },
+    {
+        "key": "cmd+l",
+        "command": "workbench.action.gotoLine"
     }
 ]

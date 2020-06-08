@@ -29,6 +29,7 @@ done
 plugins=(
 	colored-man-pages
 	docker
+	docker-compose
 	fzf
 	fzf-tab
 	osx
