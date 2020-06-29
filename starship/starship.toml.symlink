@@ -2,3 +2,7 @@ add_newline = false
 
 [java]
 style = "bold 222"
+
+[time]
+disabled = false
+
