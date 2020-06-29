@@ -20,7 +20,7 @@
   "workbench.editor.enablePreview": false,
   "workbench.sideBar.location": "right",
   "workbench.activityBar.visible": true,
-  "workbench.colorTheme": "City Lights",
+  "workbench.colorTheme": "Brogrammer",
   "workbench.iconTheme": "material-icon-theme",
   "material-icon-theme.files.associations": {
     ".nycrc.yaml": "istanbul"
@@ -48,6 +48,7 @@
     "**/cov.xml": true,
     "**/CVS": true,
     "**/junit.xml": true,
+    "**/node_modules": true,
     "**/venv": true
   },
   // INTEGRATED TERMINAL
@@ -84,5 +85,17 @@
   "eslint.alwaysShowStatus": true,
   // Others
   "remote.SSH.configFile": "~/.ssh/personal.config",
-  "bashIde.highlightParsingErrors": false
+  "bashIde.highlightParsingErrors": false,
+  "window.zoomLevel": 0,
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "typescript.enablePromptUseWorkspaceTsdk": true,
+  "python.formatting.provider": "black",
+  "json.format.enable": false,
+  "prettier.tabWidth": 4,
+  "prettier.useTabs": true,
+  "prettier.singleQuote": true,
+  "ruby.useLanguageServer": true
 }
