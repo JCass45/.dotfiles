@@ -1,0 +1,8 @@
+gversionbump() {
+    if [ $# -eq 0 ]; then
+        echo "No version number supplied"
+        return
+    fi
+    git add CHANGELOG.md build.sbt
+    git commit -m "update: CHANGELOG and version to "$1""
+}
