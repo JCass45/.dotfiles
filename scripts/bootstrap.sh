@@ -1,4 +1,4 @@
-#!/bin/sh
+#! env zsh
 
 if [ -z $(command -v brew) ]; then
     echo "Install homebrew!"

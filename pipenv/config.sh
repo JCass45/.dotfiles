@@ -1,4 +1,4 @@
-#!/bin/sh
+#! env zsh
 
 export PIPENV_DEFAULT_PYTHON_VERSION=3.8
 export PIPENV_VENV_IN_PROJECT=1

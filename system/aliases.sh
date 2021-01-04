@@ -1,4 +1,4 @@
-#!/bin/sh
+#! env zsh
 
 if command -v lsd > /dev/null 2>&1; then
     alias ls="lsd --group-dirs=last -1"

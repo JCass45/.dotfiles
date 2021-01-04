@@ -2,10 +2,8 @@
   "editor.selectionHighlight": false,
   "editor.fontFamily": "FiraCode Nerd Font, Hack Nerd Font, Menlo, Monaco, 'Courier New', monospace",
   "debug.console.fontFamily": "FiraCode Nerd Font, Hack Nerd Font, Menlo, Monaco, 'Courier New', monospace",
-  "editor.fontSize": 15,
+  "editor.fontSize": 14,
   "editor.fontLigatures": true,
-  "editor.formatOnPaste": true,
-  "editor.formatOnType": true,
   "editor.formatOnSave": true,
   "editor.renderWhitespace": "selection",
   "editor.codeActionsOnSave": {
@@ -23,7 +21,14 @@
   "workbench.colorTheme": "Brogrammer",
   "workbench.iconTheme": "material-icon-theme",
   "material-icon-theme.files.associations": {
-    ".nycrc.yaml": "istanbul"
+    ".nycrc.yaml": "istanbul",
+    ".nycrc.js": "istanbul",
+    ".mocharc.dev.json": "mocha",
+    ".mocharc.reporters.json": "mocha",
+    ".mocharc.dev.js": "mocha",
+    ".mocharc.reporters.js": "mocha",
+    "tsconfig.json": "typescript",
+    "tsconfig.dev.json": "typescript",
   },
   "material-icon-theme.folders.associations": {
     "unit": "test",
@@ -41,7 +46,6 @@
     "**/.mypy_cache": true,
     "**/.pytest_cache": true,
     "**/.svn": true,
-    "**/.vscode": true,
     "**/*.egg-info": true,
     "**/*.pyc": true,
     "**/*.scannerwork": true,
@@ -67,6 +71,7 @@
       88
     ]
   },
+  "python.formatting.provider": "black",
   "python.autoComplete.addBrackets": true,
   "python.venvPath": "~/.pyenv",
   "python.linting.pylintArgs": [
@@ -78,24 +83,25 @@
     "-ll"
   ],
   "python.testing.pytestEnabled": true,
-  // Javascript
-  "javascript.updateImportsOnFileMove.enabled": "always",
-  "javascript.format.enable": false, // Let eslint handle everything!
-  "javascript.validate.enable": false,
-  "eslint.alwaysShowStatus": true,
   // Others
   "remote.SSH.configFile": "~/.ssh/personal.config",
   "bashIde.highlightParsingErrors": false,
+  "typescript.enablePromptUseWorkspaceTsdk": true,
+  "ruby.useLanguageServer": true,
+  "eslint.probe": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact"
+  ],
+  "eslint.alwaysShowStatus": true,
+  "eslint.debug": true,
+  "editor.minimap.enabled": false,
   "window.zoomLevel": 0,
   "typescript.updateImportsOnFileMove.enabled": "always",
-  "[typescript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "typescript.enablePromptUseWorkspaceTsdk": true,
-  "python.formatting.provider": "black",
-  "json.format.enable": false,
-  "prettier.tabWidth": 4,
-  "prettier.useTabs": true,
-  "prettier.singleQuote": true,
-  "ruby.useLanguageServer": true
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "go.formatTool": "goimports",
+  "jupyter.askForKernelRestart": false,
+  "go.useLanguageServer": true,
+  "gitblame.statusBarMessageFormat": "Blame ${author.name} (${commit.hash_short}) (${time.ago})"
 }

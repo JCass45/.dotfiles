@@ -1,3 +1,4 @@
 dshell () {
-    docker exec -it "$1" bash
+    docker exec -it "$1" ash || docker exec -it "$1" bash
 }
+

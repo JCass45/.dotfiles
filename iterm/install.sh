@@ -1,5 +1,6 @@
-#!/bin/sh
+#! env zsh
 
 [ "$(uname -s)" != "Darwin" ] && return
-defaults write com.googlecode.iterm2 "PrefsCustomFolder" -string "$HOME/dotfiles/iterm"
+echo "iTerm installation"
+defaults write com.googlecode.iterm2 "PrefsCustomFolder" -string "$DOTFILES/iterm"
 defaults write com.googlecode.iterm2 "LoadPrefsFromCustomFolder" -bool true

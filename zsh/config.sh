@@ -1,4 +1,4 @@
-#!/bin/sh
+#! env zsh
 
 # Set lang for UTF-8 compatible prompt fix
 export LC_ALL=en_US.UTF-8

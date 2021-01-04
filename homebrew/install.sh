@@ -1,3 +1,3 @@
-#!/bin/sh
+#! env zsh
 
 brew bundle --file=homebrew/Brewfile

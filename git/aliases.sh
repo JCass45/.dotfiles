@@ -1,4 +1,4 @@
-#! /bin/sh
+#! env zsh
 
 alias gs="git status"
 alias gl="git log"
@@ -26,3 +26,5 @@ alias grc="git rebase --continue"
 alias grs="git rebase --skip"
 alias gra="git rebase --abort"
 alias gcp="git cherry-pick"
+alias wip="git add . && git commit -m \"WIP\" --no-verify"
+alias unwip="git reset HEAD^"

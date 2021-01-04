@@ -1,4 +1,4 @@
-#!/bin/sh
+#! env zsh
 
 export STARSHIP_CONFIG=$HOME/.starship.toml
 

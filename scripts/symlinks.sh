@@ -1,4 +1,4 @@
-#!/bin/sh
+#! env zsh
 
 DOTFILES_ROOT=$(pwd -P)
 echo $(pwd)

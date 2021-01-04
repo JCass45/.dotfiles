@@ -1,4 +1,4 @@
-#! /bin/sh
+#! env zsh
 
 # better diffs
 if ! command -v diff-so-fancy > /dev/null 2>&1; then

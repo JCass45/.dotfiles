@@ -1,4 +1,4 @@
-#!/bin/sh
+#! env zsh
 
 alias d="docker"
 alias dps="docker push"
@@ -13,3 +13,4 @@ alias dcp="docker container prune"
 alias dils="docker image ls"
 alias dirm="docker rmi"
 alias dip="docker image prune"
+alias dcom="docker-compose"
